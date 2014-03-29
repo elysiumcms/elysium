@@ -14,5 +14,6 @@ This project rocks and uses MIT-LICENSE.
 git clone https://github.com/wafcio/elysium
 cd elysium
 bundle exec rake dummy:app
+bundle exec rake app:db:migrate
 ```
 
