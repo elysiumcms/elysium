@@ -8,4 +8,6 @@ class Elysium::Template < ActiveRecord::Base
   validates :name, presence: true, length: { maximum: 255 }
   validates :description, :javascript, :stylesheet, length: { maximum: 65535 }
   validates :site, presence: true
+
+  mount_uploader :screenshot, Elysium::ScreenshotUploader
 end
